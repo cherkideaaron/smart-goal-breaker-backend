@@ -1,0 +1,13 @@
+{
+  "build": {
+    "root": "backend",
+    "commands": {
+      "install": "pip install -r requirements.txt",
+      "start": "uvicorn main:app --host 0.0.0.0 --port $PORT"
+    }
+  },
+  "env": {
+    "GEMINI_API_KEY": "AIzaSyBm_Y3mtq__hwelQU3fGmX792imfRs6XGw",
+    "DATABASE_URL": "postgresql+asyncpg://postgres:JvcoXSMbjSlYuAIHoQZzvKVcCgnvfiyG@shinkansen.proxy.rlwy.net:33965/railway"
+  }
+}
