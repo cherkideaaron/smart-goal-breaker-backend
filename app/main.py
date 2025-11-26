@@ -15,7 +15,11 @@ genai_client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 app = FastAPI()
 
-origins = ["http://localhost:3000"]
+origins = [
+    "http://localhost:3000",
+    "https://smart-goal-breaker-z1mk-3i656jqay-aarons-projects-7d22b703.vercel.app"
+]
+
 
 app.add_middleware(
     CORSMiddleware,
