@@ -29,6 +29,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.post("/api/test")
+async def test_endpoint():
+    return {"message": "Test OK"}
+
+
 # --- Startup event to create tables only ---
 @app.on_event("startup")
 async def startup():
