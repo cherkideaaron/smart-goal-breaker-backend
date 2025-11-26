@@ -17,7 +17,7 @@ app = FastAPI()
 
 origins = [
     "http://localhost:3000",
-    "https://smart-goal-breaker-z1mk-3i656jqay-aarons-projects-7d22b703.vercel.app"
+    "https://smart-goal-breaker-9c4e.vercel.app/"
 ]
 
 
